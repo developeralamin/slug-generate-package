@@ -1,0 +1,29 @@
+{
+    "name": "alamin/slug-generate",
+    "description": "A simple laravel slug generator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "alamin",
+            "email": "alamincsetpi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alamin\\UniqueSlugGenerator\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+    "laravel": {
+        "providers": [
+            "Alamin\\UniqueSlugGenerator\\UniqueSlugGenerateProvider"
+        ],
+        "aliases": {
+            "UniqueSlug": "Alamin\\UniqueSlugGenerator\\UniqueSlug"
+        }
+    }
+}
+}
